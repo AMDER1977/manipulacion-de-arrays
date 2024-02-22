@@ -7,6 +7,7 @@ const tareas = [
   { titulo: "Hacer la compra", completado: false },
   { titulo: "Estudiar para el examen", completado: false },
   { titulo: "Hacer ejercicio", completado: false },
+  { titulo: "Leer la Biblia", completado: false },
 ];
 
 // Función para renderizar la lista de tareas en HTML
