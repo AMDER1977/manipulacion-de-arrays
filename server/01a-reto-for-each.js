@@ -5,7 +5,7 @@ Crea una lista de tareas, a partir de un array que contenga el título y el esta
 // Array de tareas con título y estado
 const tareas = [
   { titulo: "Hacer la compra", completado: false },
-  { titulo: "Estudiar para el examen", completado: true },
+  { titulo: "Estudiar para el examen", completado: false },
   { titulo: "Hacer ejercicio", completado: false },
 ];
 
