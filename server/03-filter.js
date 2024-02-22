@@ -10,5 +10,8 @@ for (let index = 0; index < words.length; index++) {
   }
 }
 
+const responseWords = words.filter((item) => item.length >= 6);
+
 console.log("el original: ", words);
 console.log("con el for:", newWords);
+console.log("con filter:", responseWords);
