@@ -16,3 +16,31 @@ const responseWords = words.filter((item) => item.length >= 6); //filter una sol
 console.log("el original: ", words);
 console.log("con el for:", newWords);
 console.log("con filter:", responseWords);
+
+/*FILTRANDO OBJETOS*/
+const orders = [
+  {
+    customerName: "Nicolas",
+    total: 60,
+    delivered: true,
+  },
+  {
+    customerName: "Zulema",
+    total: 120,
+    delivered: false,
+  },
+  {
+    customerName: "Santiago",
+    total: 180,
+    delivered: true,
+  },
+  {
+    customerName: "Valentina",
+    total: 240,
+    delivered: true,
+  },
+];
+
+const rta3 = orders.filter((item) => item.delivered && item.total >= 150);
+
+console.log("filtrando un objeto: ", rta3);
