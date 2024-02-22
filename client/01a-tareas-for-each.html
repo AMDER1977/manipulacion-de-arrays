@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tareas</title>
+    <style>
+      /* Agrega estilos según tu preferencia */
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lista de Tareas</h1>
+
+    <!-- Contenedor para la lista de tareas -->
+    <ul id="listaTareas"></ul>
+
+    <script>
+      // Array de tareas con título y estado
+      const tareas = [
+        { titulo: "Hacer la compra", completado: false },
+        { titulo: "Estudiar para el examen", completado: true },
+        { titulo: "Hacer ejercicio", completado: false },
+      ];
+
+      // Función para renderizar la lista de tareas en HTML
+      function renderizarListaTareas() {
+        const listaTareasElement = document.getElementById("listaTareas");
+
+        // Limpiamos el contenido actual
+        listaTareasElement.innerHTML = "";
+
+        // Iteramos sobre el array de tareas y creamos elementos HTML
+        tareas.forEach((tarea, index) => {
+          const li = document.createElement("li");
+
+          // Creamos un input de tipo checkbox
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.checked = tarea.completado; // Marcamos como completado si es true
+          checkbox.addEventListener("change", () => {
+            // Actualizamos el estado de la tarea cuando se cambia el checkbox
+            tareas[index].completado = checkbox.checked;
+          });
+
+          // Creamos un span con el título de la tarea
+          const span = document.createElement("span");
+          span.textContent = tarea.titulo;
+
+          // Añadimos el checkbox y el span al elemento li
+          li.appendChild(checkbox);
+          li.appendChild(span);
+
+          // Añadimos el elemento li a la lista
+          listaTareasElement.appendChild(li);
+        });
+      }
+
+      // Llamamos a la función para renderizar la lista de tareas inicialmente
+      renderizarListaTareas();
+    </script>
+  </body>
+</html>
