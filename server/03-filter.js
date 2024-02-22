@@ -30,7 +30,7 @@ const orders = [
     delivered: false,
   },
   {
-    customerName: "Santiago",
+    customerName: "Nicoiago",
     total: 180,
     delivered: true,
   },
@@ -44,3 +44,10 @@ const orders = [
 const rta3 = orders.filter((item) => item.delivered && item.total >= 150);
 
 console.log("filtrando un objeto: ", rta3);
+
+const search = (query) => {
+  return orders.filter((item) => {
+    return item.customerName.includes(query);
+  });
+};
+console.log(search("Nico"));
