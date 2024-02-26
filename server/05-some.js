@@ -68,7 +68,9 @@ const newAppointment = {
   endDate: new Date(2021, 1, 1, 9, 30),
 };
 
-const areIntervalsOverlapping = require("date-fns/areIntervalsOverlapping");
+// const areIntervalsOverlapping = require("date-fns/areIntervalsOverlapping");// no funciono asi.
+const { areIntervalsOverlapping } = require("date-fns");
+
 const isOverlap = (newDate) => {
   return dates.some((date) => {
     return areIntervalsOverlapping(
