@@ -1,4 +1,4 @@
-const items = [1, 3, 2, 3];
+const items = [1, 3, 2, 3, 4, 3, 1, 4];
 
 const rta = items.reduce((obj, item) => {
   if (!obj[item]) {
