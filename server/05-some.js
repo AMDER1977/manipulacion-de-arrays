@@ -11,3 +11,31 @@ for (let i = 0; i < numbers.length; i++) {
   }
 }
 console.log(response);
+
+const response2 = numbers.some((i) => i % 2 === 0);
+console.log("response 2 : ", response2);
+
+//** SOME CON OBJETOS */
+
+const orders = [
+  {
+    customerName: "Nicolas",
+    total: 60,
+    delivered: true,
+  },
+  {
+    customerName: "Zulema",
+    total: 120,
+    delivered: false,
+  },
+  {
+    customerName: "Nicoiago",
+    total: 180,
+    delivered: true,
+  },
+  {
+    customerName: "Valentina",
+    total: 240,
+    delivered: true,
+  },
+];
