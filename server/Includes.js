@@ -13,3 +13,6 @@ for (let index = 0; index < pets.length; index++) {
 console.log("hecho con for pusheando el elemento encontrado:", petInclude);
 
 //** AHORA CON INCLUDE ES UN BOOLEANO QUE RETORNA */
+
+let includesRta = pets.includes("cat");
+console.log("con el metodo Includes: ", includesRta);
