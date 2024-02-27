@@ -3,7 +3,7 @@ months.sort();
 console.log(months);
 
 const numbers = [1, 30, 4, 21, 100000];
-numbers.sort((a, b) => b - a);
+numbers.sort((a, b) => b - a); // de mayor a menor a-b seria de menor a mayor.
 console.log(numbers);
 
 const words = [
@@ -15,7 +15,7 @@ const words = [
   "éclair",
   "banana",
 ];
-words.sort((a, b) => a.localeCompare(b));
+words.sort((a, b) => a.localeCompare(b)); // para navegadores no modernos y node antiguo
 console.log(words);
 
 const orders = [
