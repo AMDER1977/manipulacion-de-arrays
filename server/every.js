@@ -14,5 +14,5 @@ console.log(response);
 
 //** con every */
 
-let response2 = numbers.every((item) => item <= 40);
+let response2 = numbers.every((item) => item <= 50);
 console.log(" Con Every : ", response2);
