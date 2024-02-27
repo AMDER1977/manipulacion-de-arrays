@@ -39,3 +39,5 @@ const products = [
 
 const resp3 = products.find((item) => item.id === "🍕");
 console.log("esta es objetos con Find", resp3);
+const resp4 = products.findIndex((item) => item.id === "🥞");
+console.log("esta es objetos con FindIndex : ", resp4);
