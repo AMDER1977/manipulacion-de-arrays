@@ -15,6 +15,7 @@ console.log("Usando el FOR clasico: ", newArray);
 const conConcat = elements.concat(otherElements);
 console.log("usando concat: ", conConcat);
 
-//**IGUAL SE PUEDE UTILIZAR EL SPREAD OPERATION */
+//**IGUAL SE PUEDE UTILIZAR EL SPREAD OPERATION */solo si es un Array
+
 const respuestaN = [...elements, ...otherElements];
 console.log("Con SPREAD : ", respuestaN);
